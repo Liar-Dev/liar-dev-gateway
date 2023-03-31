@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    config:
+      uri: ---- secret ----
+  profiles:
+    active: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  cloud:
+    config:
+      name: common-local, redis-local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  cloud:
+    config:
+      name: common-dev, redis-dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  cloud:
+    config:
+      name: common-dev, redis-dev

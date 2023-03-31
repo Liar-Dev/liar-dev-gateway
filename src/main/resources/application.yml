@@ -1,0 +1,35 @@
+server:
+  port: 8000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, busrefresh
+
+logging:
+  level:
+    org.springframework.security: info
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: reactive
+
+  application:
+    name: gateway-service
+
+  security:
+    user:
+      name: ---- secret ----
+      password: ---- secret ----
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ---- secret ----
