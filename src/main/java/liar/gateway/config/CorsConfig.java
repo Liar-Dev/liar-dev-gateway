@@ -16,10 +16,10 @@ public class CorsConfig {
         corsConfiguration.setAllowCredentials(true);
         corsConfiguration.addAllowedOriginPattern("http://localhost:8000");
         corsConfiguration.addAllowedOriginPattern("http://localhost:3000");
-        corsConfiguration.addAllowedOriginPattern("http://43.201.26.3:8080");
-        corsConfiguration.addAllowedOriginPattern("http://10.50.71.67:8000");
-        corsConfiguration.addAllowedOriginPattern("http://3.39.187.39:8080");
-        corsConfiguration.addAllowedOriginPattern("http://3.39.187.39:8761");
+        corsConfiguration.addAllowedOriginPattern("");
+        corsConfiguration.addAllowedOriginPattern("");
+        corsConfiguration.addAllowedOriginPattern("");
+        corsConfiguration.addAllowedOriginPattern("");
         corsConfiguration.addAllowedHeader("*");
         corsConfiguration.addAllowedMethod("*");
         corsConfiguration.addExposedHeader("Access-Control-Allow-Origin");
